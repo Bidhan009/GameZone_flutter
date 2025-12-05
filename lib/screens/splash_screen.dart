@@ -28,12 +28,9 @@ class _SplashScreenState extends State<SplashScreen> {
       body: SingleChildScrollView(
         child: Container(
           width: double.infinity,
-          // decoration: const BoxDecoration(
-          // ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              // const Icon(Icons.music_note, color: Colors.white, size: 90),
               Image.asset('assets/images/app_logo.png'),
               const SizedBox(height: 20),
               const SizedBox(height: 20),
