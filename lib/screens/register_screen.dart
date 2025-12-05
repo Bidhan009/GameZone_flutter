@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_sprint1/screens/login_screen.dart';
-// import 'home_screen.dart';
 
 class RegisterScreen extends StatelessWidget {
   const RegisterScreen({super.key});
