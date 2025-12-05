@@ -22,7 +22,7 @@ class RegisterScreen extends StatelessWidget {
               // Full Name
               TextField(
                 decoration: InputDecoration(
-                  labelText: "Full Name",
+                  labelText: "Fullname",
                   prefixIcon: const Icon(Icons.person),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
