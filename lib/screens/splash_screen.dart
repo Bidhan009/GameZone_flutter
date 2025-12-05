@@ -25,28 +25,21 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
-      body: Container(
-        width: double.infinity,
-        decoration: const BoxDecoration(
-          // gradient: LinearGradient(
-          //   colors: [Color(0xff6A5AE0), Color(0xff8EA7E9)],
-          //   begin: Alignment.topLeft,
-          //   end: Alignment.bottomRight,
+      body: SingleChildScrollView(
+        child: Container(
+          width: double.infinity,
+          // decoration: const BoxDecoration(
           // ),
-        ),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            // const Icon(Icons.music_note, color: Colors.white, size: 90),
-            Image.asset('assets/images/app_logo.png'),
-            const SizedBox(height: 20),
-            // const Text(
-            //   "Music App",
-            //   style: TextStyle(fontSize: 30, color: Colors.white, fontWeight: FontWeight.bold),
-            // ),
-            const SizedBox(height: 20),
-            CircularProgressIndicator(color: Colors.white.withOpacity(0.8)),
-          ],
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              // const Icon(Icons.music_note, color: Colors.white, size: 90),
+              Image.asset('assets/images/app_logo.png'),
+              const SizedBox(height: 20),
+              const SizedBox(height: 20),
+              CircularProgressIndicator(color: Colors.white.withOpacity(0.8)),
+            ],
+          ),
         ),
       ),
     );
